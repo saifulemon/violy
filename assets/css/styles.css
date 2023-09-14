@@ -2,7 +2,7 @@
 
 /********************* Design Steps ************************
 1. Top Navbar
-2. 
+2. Services Section
 3. 
 4. 
 5. 
@@ -15,12 +15,6 @@
   padding: 10px;
   background: var(--dark-bg);
   color: #fff;
-}
-
-.top-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .top-nav .right-nav span:last-child {
@@ -37,6 +31,9 @@
   margin-right: 10px;
   color: var(--icon-color);
 }
+
+/* 2. Services Section */
+
 
 
 
