@@ -51,6 +51,20 @@ h1 {
   display: block;
 }
 
+h3 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #272733;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+  color: #2b2727;
+}
+
 a {
   color: unset;
 }
