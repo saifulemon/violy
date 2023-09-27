@@ -1,9 +1,10 @@
 @import url("base.css");
+@import url("./exports/btn.css");
 
 /********************* Design Steps ************************
 1. Top Navbar
 2. Services Section
-3. 
+3. Welcome section
 4. 
 5. 
 6. 
@@ -96,6 +97,82 @@
   padding-top: 20px;
 }
 
+/* 3. Welcome section */
+.wlc-wrap {
+  background: whitesmoke;
+  position: relative;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wlc-img {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.wlc-img:hover img {
+  transform: scale(1.04);
+}
+
+.wlc-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.wlc-txt {
+  background: whitesmoke;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: flex-start;
+  max-width: 750px;
+  justify-content: center;
+  text-align: start;
+}
+
+.wlc-wrap .wlc-txt h2 {
+  font-size: 3.5rem;
+  position: relative;
+}
+
+.wlc-wrap .wlc-txt h2::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #ee3fce;
+  position: absolute;
+  bottom: -22px;
+}
+
+.wlc-wrap .wlc-txt p {
+  padding-top: 35px;
+}
+
+.wlc-wrap .btn {
+  margin-top: 5rem;
+}
+
+.wlc-wrap .btn a:hover {
+  box-shadow: inset 0 0 0 25px #272733;
+  color: #fff;
+}
+
+.wlc-wrap .btn a {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7231cf),
+    to(#ee3fce)
+  );
+}
 
 /********** mobile responsive ***********/
  @media (max-width: 1200px) {
@@ -110,6 +187,19 @@
   .row-grid {
     grid-template-columns: 1fr !important;
     row-gap: 5rem;
+  }
+
+  /* 3. Welcome section */
+  .wlc-wrap {
+    grid-template-columns: auto;
+  }
+
+  .wlc-txt {
+    padding: 2rem 3.5rem;
+  }
+
+  .wlc-wrap .wlc-txt h2 {
+    font-size: 2.8rem;
   }
 }
 
@@ -128,4 +218,11 @@
     justify-content: center;
     gap: 8px;
   }
+}
+
+@media (max-width: 376px) {
+    /* 3. Welcome section */
+    .wlc-txt {
+      padding: 3rem 3.5rem;
+    }
 }
