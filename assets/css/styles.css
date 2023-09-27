@@ -5,7 +5,7 @@
 1. Top Navbar
 2. Services Section
 3. Welcome section
-4. 
+4. Products section
 5. 
 6. 
 7. 
@@ -38,15 +38,6 @@
   padding: 100px 0;
 }
 
-.row-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 4rem;
-  place-items: center;
-  align-self: center;
-  justify-self: center;
-}
-
 .col {
   text-align: center;
   opacity: 1;
@@ -58,8 +49,14 @@
   position: relative;
   width: 90px;
   height: 90px;
-  background: -webkit-gradient(linear, left top, right top, from(#ee3fce), to(#7231CF));
-  background: linear-gradient(90deg, #ee3fce 0%, #7231CF 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ee3fce),
+    to(#7231cf)
+  );
+  background: linear-gradient(90deg, #ee3fce 0%, #7231cf 100%);
   border-radius: 50%;
   display: flex;
   -webkit-box-pack: center;
@@ -69,16 +66,16 @@
 }
 
 .col span::before {
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    background: #fde8f9;
-    z-index: -1;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    left: -10px;
-    top: -10px;
-    animation: shadow 2s infinite ease-in-out;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  background: #fde8f9;
+  z-index: -1;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  left: -10px;
+  top: -10px;
+  animation: shadow 2s infinite ease-in-out;
 }
 
 @keyframes shadow {
@@ -174,13 +171,168 @@
   );
 }
 
+/* 4. Products section */
+.products {
+  background: #161a23;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.element-ten {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  animation: elm_th 1s infinite ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+.element-eleven {
+  position: absolute;
+  bottom: 150px;
+  left: -20px;
+  animation: elm_th 1s infinite ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes elm_th {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.title-box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-box h2 {
+  color: #fff;
+  padding-bottom: 35px;
+  font-size: 3.5rem;
+  position: relative;
+}
+
+.title-box h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #ee3fce;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.title-box p {
+  color: #fff;
+  max-width: 600px;
+  padding-block: 2rem;
+}
+
+.products-cards {
+  margin-top: 5rem;
+}
+
+.card {
+  background: #fff;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  background: #272733;
+}
+
+.card:hover {
+  transform: translate(0px, -10px);
+}
+
+.card img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-body h3 {
+  padding-inline: 25px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.card-body p {
+  margin-top: 15px;
+  padding-inline: 25px;
+  color: #c9c9c9;
+  position: relative;
+}
+
+.card-body p::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #ee3fce;
+  margin-top: 25px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.card-body span {
+  display: block;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.card-body span i {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 5px;
+}
+
+.card-body .btn {
+  margin-top: 3rem;
+}
+
+.card-body .btn a {
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#7231cf),
+    to(#ee3fce)
+  );
+}
+
+.card-body .btn a:hover {
+  box-shadow: inset 0 0 0 25px #fff;
+  color: #272733;
+}
+
 /********** mobile responsive ***********/
- @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   
 }
 
-@media (max-width: 992px) {
-  
+@media (max-width: 1024px) {
+  /* 4. Products section */
+  .products-cards {
+    padding-inline: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -201,6 +353,11 @@
   .wlc-wrap .wlc-txt h2 {
     font-size: 2.8rem;
   }
+
+  /* 4. Products section */
+  .card {
+    width: 65%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -210,7 +367,8 @@
     text-align: center;
   }
 
-  .top-nav .container .left-nav, .right-nav {
+  .top-nav .container .left-nav,
+  .right-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -218,11 +376,20 @@
     justify-content: center;
     gap: 8px;
   }
+
+  /* 4. Products section */
+  .card {
+    width: 95%;
+  }
+
+  .title-box p {
+    padding-inline: 1.8rem;
+  }
 }
 
 @media (max-width: 376px) {
-    /* 3. Welcome section */
-    .wlc-txt {
-      padding: 3rem 3.5rem;
-    }
+  /* 3. Welcome section */
+  .wlc-txt {
+    padding: 3rem 3.5rem;
+  }
 }

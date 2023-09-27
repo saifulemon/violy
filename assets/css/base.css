@@ -88,6 +88,15 @@ img {
   margin-left: -15px;
 }
 
+.row-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  place-items: center;
+  align-self: center;
+  justify-self: center;
+}
+
 .d-flex {
   display: flex;
   align-items: center;
