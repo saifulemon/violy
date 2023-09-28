@@ -7,7 +7,7 @@
 3. Welcome section
 4. Products section
 5. Work section
-6. 
+6. Process section
 7. 
 *************************************************************/
 
@@ -328,11 +328,11 @@
   padding-block: 10rem;
 }
 
-.work .container .title-box h2 {
+.work .container .title-box h2, .process .container .title-box h2  {
   color: black;
 }
 
-.work .container .title-box p {
+.work .container .title-box p, .process .container .title-box p {
   margin: 0 auto;
   color: #2b2727;
 }
@@ -483,6 +483,125 @@
   transform: scale(1.08);
 }
 
+/* 6. Process section */
+.process {
+  background: #eee;
+  background: url('../images/bg_light.jpg');
+  padding-block: 100px;
+}
+
+.row-process {
+  padding-top: 5rem;
+  position: relative;
+}
+
+.process-block {
+  text-align: center;
+  width: 33%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 50px 15px;
+  position: relative;
+  border-top: 2px solid #ee3fce;
+}
+
+.process-block .p-block-wrap {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+}
+
+.process-block h4 {
+  padding-bottom: 15px;
+  font-weight: 500 !important;
+}
+
+.process-block p {
+  margin: 0px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.process-block span {
+  position: absolute;
+  top: -20px;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background: linear-gradient(90deg, #ee3fce 0%, #7231CF 100%);
+  color: #fff;
+}
+
+.process-block span:after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: rgba(238, 61, 197, 0.15);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.process-block:nth-child(6n-3) {
+  border-right: 2px solid #ee3fce;
+  border-bottom: 2px solid #ee3fce;
+  border-radius: 0 20px 20px 0;
+}
+
+.process-block:nth-child(3n+3) {
+  padding-right: 30px;
+}
+
+.process-block:nth-child(3n+1) {
+  padding-left: 30px;
+}
+
+.process-block:nth-child(6n-2), .process-block:nth-child(6n-1), .process-block:nth-child(6n+2), .process-block:nth-child(6n+3) {
+  margin-top: -2px;
+}
+
+.process-block:nth-child(6n-6) {
+  border-top: none;
+}
+
+.process-block:nth-child(6n+1) {
+  border-top: none;
+}
+
+.process-block:nth-child(6n-2) {
+  border-left: 2px solid #ee3fce;
+  border-bottom: 2px solid #ee3fce;
+  border-radius: 20px 0px 0 20px;
+}
+
+.process-block:nth-last-child(-n+3) {
+  padding-bottom: 0px;
+}
+
+.process-block:nth-last-child(-n+3) {
+  padding-bottom: 0px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+}
+
+.process-block:nth-child(1) {
+  border-top: 2px solid #ee3fce;
+  margin-top: -2px;
+}
+
+
 /********** mobile responsive ***********/
 @media (max-width: 1200px) {
 }
@@ -542,6 +661,12 @@
   }
 }
 
+/* 6. Process section */
+.process-block .p-block-wrap {
+  padding: 34px;
+  height: auto;
+}
+
 @media (max-width: 576px) {
   /* 1. Top Navbar */
   .top-nav .container {
@@ -566,6 +691,35 @@
 
   .title-box p {
     padding-inline: 1.8rem;
+  }
+
+
+  /* 6. Process section */
+  .process-block {
+    width: 100% !important;
+  }
+
+  .row-process {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .process-block:nth-child(3n+3) {
+    padding-right: 15px;
+  }
+  .process-block:nth-child(3n+1) {
+    padding-left: 15px;
+  }
+  .process-block:nth-child(6n-3) {
+    border-right: none;
+    border-radius: 0px;
+  }
+  .process-block:nth-last-child(-n+3) {
+    padding-bottom: 50px;
+  }
+  .process-block:nth-child(6n-6) {
+    border-top: 2px solid #ee3fce;
   }
 }
 

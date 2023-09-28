@@ -51,10 +51,24 @@ h1 {
   display: block;
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #272733;
+}
+
 h3 {
   font-size: 22px;
   line-height: 34px;
   font-weight: 600;
+  color: #272733;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
   color: #272733;
 }
 
