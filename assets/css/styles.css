@@ -6,7 +6,7 @@
 2. Services Section
 3. Welcome section
 4. Products section
-5. 
+5. Work section
 6. 
 7. 
 *************************************************************/
@@ -323,9 +323,168 @@
   color: #272733;
 }
 
+/* 5. Work section */
+.work {
+  padding-block: 10rem;
+}
+
+.work .container .title-box h2 {
+  color: black;
+}
+
+.work .container .title-box p {
+  margin: 0 auto;
+  color: #2b2727;
+}
+
+.wrk {
+  margin-top: 5rem;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: transparent !important;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.wrk-wrap {
+  background: transparent;
+}
+
+.img-wrk {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-wrk img {
+  object-fit: cover;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+
+.work .wlc-wrap .wrk-txt {
+  padding: 4rem;
+  background: transparent !important;
+}
+
+.work .wlc-wrap .wrk-txt h2 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #272733;
+}
+
+.work .wlc-wrap .wrk-txt h2::after {
+  background: #d6d6d6;
+}
+
+.work .wlc-wrap .wrk-txt span {
+  padding-top: 50px;
+  display: block;
+  font-weight: 500;
+  color: #1B1F28;
+}
+
+.wrk-icon .icon-wrapper {
+  height: auto;
+  padding: 11rem 0 5rem 0;
+}
+
+.wrk-icon .icon-wrapper a {
+  margin-right: 1rem;
+}
+
+.wrk-img {
+  border-radius: 10px;
+  display: flex;
+}
+
+.wrk-img .img-prf {
+  position: relative;
+  display: flex;
+  width: calc((100% / 5) - 20px);
+  margin: 0px 10px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.wrk-img .img-prf a {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.wrk-img .img-prf a img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.wrk-img .img-prf a:before {
+  content: '';
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrk-img .img-prf .hover-info {
+  opacity: 0;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  background: #000;
+  background: linear-gradient(90deg, #ee3fce 0%, #7231CF 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  transition: .3s;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.wrk-img .img-prf .hover-info i {
+  color: #fff;
+}
+
+.wrk-img .img-prf:hover .hover-info, .wrk-img .img-prf:hover a:before {
+  opacity: 1;
+}
+
+.wrk-img .img-prf:hover img {
+  transform: scale(1.08);
+}
+
 /********** mobile responsive ***********/
 @media (max-width: 1200px) {
-  
 }
 
 @media (max-width: 1024px) {
@@ -357,6 +516,29 @@
   /* 4. Products section */
   .card {
     width: 65%;
+  }
+
+  /* 5. Work section */
+  .wrk-img .row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrk-img .img-prf {
+    width: auto;
+    height: 200px;
+  }
+
+  .wrk-img .img-prf a img {
+    height: auto;
+  }
+
+  .img-wrk {
+    width: 100%;
+  }
+
+  .wrk-txt {
+    margin-top: 3.5rem;
   }
 }
 

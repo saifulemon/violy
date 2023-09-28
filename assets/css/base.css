@@ -84,8 +84,7 @@ img {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-inline: -15px;
 }
 
 .row-grid {
