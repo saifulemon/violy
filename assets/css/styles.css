@@ -9,6 +9,7 @@
 5. Work section
 6. Process section
 7. Team section
+8. Blog section
 *************************************************************/
 
 /* 1. Top Navbar */
@@ -328,11 +329,11 @@
   padding-block: 10rem;
 }
 
-.work .container .title-box h2, .process .container .title-box h2  {
+.work .container .title-box h2, .process .container .title-box h2, .blog .container .title-box h2 {
   color: black;
 }
 
-.work .container .title-box p, .process .container .title-box p {
+.work .container .title-box p, .process .container .title-box p, .blog .container .title-box p {
   margin: 0 auto;
   color: #2b2727;
 }
@@ -740,6 +741,110 @@
 .face-team .social a {
   color: #fff;
   padding: 10px;
+}
+
+/* 8. Blog section */
+.blog {
+  background: #fff;
+  padding-bottom: 80px;
+}
+
+.post-card {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 35px;
+  margin-right: 0px;
+  display: block;
+  background: #fff;
+}
+
+.post-img {
+  height: 250px;
+}
+
+.post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category {
+  padding-bottom: 20px;
+}
+
+.card-body .category span {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: #877F7F;
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.card-body .category span::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background: #d6d6d6;
+  position: absolute;
+  right: -12px;
+  top: 2px;
+}
+
+.card-body .category span:last-child::after {
+  content: none !important;
+}
+
+.blog-card {
+  padding: 25px 30px;
+  text-align: start;
+}
+
+.blog-card h2 {
+  line-height: 36px;
+  padding-bottom: 5px;
+  font-size: 24px;
+}
+
+.blog-card p {
+  overflow: hidden;
+  display: -webkit-box;
+  padding-inline: 0 !important;
+  color: #877F7F;
+  font-size: 15px;
+  height: 54.4px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.bottom-inf {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.left-inf span {
+  color: #000;
+  font-size: 12px;
+}
+
+.right-inf {
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+}
+
+.right-inf span {
+  color: #877F7F;
+  font-size: 12px;
 }
 
 /********** mobile responsive ***********/
