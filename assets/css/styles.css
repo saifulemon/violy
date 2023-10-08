@@ -10,6 +10,7 @@
 6. Process section
 7. Team section
 8. Blog section
+9. Footer section
 *************************************************************/
 
 /* 1. Top Navbar */
@@ -847,6 +848,48 @@
   font-size: 12px;
 }
 
+
+/* 9. Footer section */
+footer {
+  background: #161A23;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.container .brend {
+  display: flex;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brend .ft-logo {
+  padding-bottom: 20px;
+}
+
+footer p {
+  color: #8A8A8A;
+}
+
+.credit span {
+  padding-top: 20px;
+  margin-top: 50px;
+  text-align: center;
+  color: #8A8A8A;
+  display: block;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.credit span a {
+  color: #ee3fce;
+}
+
+
 /********** mobile responsive ***********/
 @media (max-width: 1200px) {
 }
@@ -942,6 +985,10 @@
   /* 4. Products section */
   .card {
     width: 95%;
+  }
+
+  .products-cards {
+    padding-inline: 1.5rem;
   }
 
   .title-box p {
