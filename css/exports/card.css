@@ -1,0 +1,49 @@
+.face-team {
+  border-radius: 20px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.face-team .team-img {
+  position: relative;
+  display: block;
+  height: 270px;
+  overflow: hidden;
+}
+
+.face-team img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.face-team .social {
+  transition: 0.3s;
+  transform: translate(0px, 100%);
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  background: rgba(189, 56, 201, 0.9);
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.face-team:hover .social {
+  opacity: 1;
+  transform: translate(0px, 0%);
+}
+
+.face-team .social a {
+  color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .face-team .team-img {
+    height: auto;
+  }
+}

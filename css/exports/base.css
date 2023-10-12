@@ -12,22 +12,6 @@
   outline: none;
 }
 
-:root {
-  --title-color: #272733;
-  --icon-color: #ffffff80;
-  --txt-color: #2b2727;
-  --dark-bg: black;
-  --primary-color: #ee3fce;
-  --Theme-color: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#ee3fce),
-    to(#7231cf)
-  );
-  --hover-color: #fff;
-}
-
 html {
   line-height: 1.15;
   font-size: 62.5%;
