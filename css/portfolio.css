@@ -57,3 +57,10 @@
   height: calc(100% - 50px);
   text-align: center;
 }
+
+
+.portfolio-content {
+    margin-top: -100px;
+    margin-bottom: 100px;
+    display: flex;
+}
